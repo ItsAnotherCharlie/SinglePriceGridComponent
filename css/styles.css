@@ -55,6 +55,12 @@ h3 {
 }
 
 @media (min-width: 998px) {
+  body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+  }
+  
   .price {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
