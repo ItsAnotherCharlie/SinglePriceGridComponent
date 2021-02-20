@@ -13,7 +13,7 @@
   --padding-x: 2.6rem;
   --padding-x-desk: 4.1rem;
   --padding-y: 3.5rem;
-  --padding-y-desk: 4.7rem;
+  --padding-y-desk: 3.2rem;
 }
 
 html {
@@ -60,7 +60,7 @@ h3 {
 .price {
   border-radius: 0.8rem;
   overflow: hidden;
-  max-width: 63.8rem;
+  max-width: 64rem;
   margin: auto;
 }
 
@@ -99,7 +99,8 @@ h3 {
 
 @media (min-width: 998px) {
   .community__heading2 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
+    margin-bottom: 2.9rem;
   }
 }
 
@@ -111,17 +112,18 @@ h3 {
 @media (min-width: 998px) {
   .community__heading3 {
     font-size: 2rem;
+    margin-bottom: 1.2rem;
   }
 }
 
 .comunnity__paragraph {
-  line-height: 2;
+  line-height: 1.8;
   font-size: 1.4rem;
 }
 
 @media (min-width: 998px) {
   .comunnity__paragraph {
-    font-size: 1.6rem;
+    font-size: 1.54rem;
   }
 }
 
@@ -136,12 +138,12 @@ h3 {
 
 @media (min-width: 998px) {
   .subs__heading2 {
-    margin-bottom: 2.3rem;
+    margin-bottom: 1.8rem;
   }
 }
 
 .subs__div {
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.2rem;
   color: var(--pricemonth);
   display: flex;
   align-items: center;
@@ -163,7 +165,7 @@ h3 {
 .subs__button {
   display: block;
   border-radius: 0.8rem;
-  padding: 1.9rem 0;
+  padding: 1.2rem 0;
   background-color: var(--yellow);
   color: var(--whitebg);
   font-weight: bold;
@@ -183,12 +185,19 @@ h3 {
   color: var(--whitebg);
 }
 
+
 .whyus__heading2 {
   margin-bottom: 2.3rem;
 }
 
+@media (min-width: 998px) {
+  .whyus__heading2 {
+    margin-bottom: 1.8rem;
+  }
+}
+
 .whyus__ulist {
   color: var(--ltgray);
-  font-size: 1.5rem;
+  font-size: 1.41rem;
   line-height: 1.6;
 }
