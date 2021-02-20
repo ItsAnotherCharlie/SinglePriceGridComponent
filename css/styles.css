@@ -11,7 +11,9 @@
   --pricemonth: hsl(181, 54%, 62%);
   --grayblue: hsl(218, 22%, 67%);
   --padding-x: 2.6rem;
+  --padding-x-desk: 4.1rem;
   --padding-y: 3.5rem;
+  --padding-y-desk: 4.7rem;
 }
 
 html {
@@ -33,6 +35,14 @@ body {
   padding: 3.1rem;
 }
 
+@media (min-width: 998px) {
+  body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -50,25 +60,15 @@ h3 {
 .price {
   border-radius: 0.8rem;
   overflow: hidden;
-  max-width: 64rem;
+  max-width: 63.8rem;
   margin: auto;
 }
 
 @media (min-width: 998px) {
-  body {
-    display: flex;
-    align-items: center;
-    height: 100vh;
-  }
-  
   .price {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
-  }
-
-  .community {
-    grid-column: 1 / 3;
   }
 }
 
@@ -76,8 +76,20 @@ h3 {
   padding: var(--padding-y) var(--padding-x);
 }
 
+@media (min-width: 998px) {
+  .price > * {
+    padding: var(--padding-y-desk) var(--padding-x-desk);
+  }
+}
+
 .community {
   background-color: var(--whitebg);
+}
+
+@media (min-width: 998px) {
+  .community {
+    grid-column: 1 / 3;
+  }
 }
 
 .community__heading2 {
@@ -85,14 +97,32 @@ h3 {
   margin-bottom: 3.4rem;
 }
 
+@media (min-width: 998px) {
+  .community__heading2 {
+    font-size: 2.6rem;
+  }
+}
+
 .community__heading3 {
   color: var(--yellow);
   margin-bottom: 2.6rem;
 }
 
+@media (min-width: 998px) {
+  .community__heading3 {
+    font-size: 2rem;
+  }
+}
+
 .comunnity__paragraph {
   line-height: 2;
   font-size: 1.4rem;
+}
+
+@media (min-width: 998px) {
+  .comunnity__paragraph {
+    font-size: 1.6rem;
+  }
 }
 
 .subs {
@@ -102,6 +132,12 @@ h3 {
 .subs__heading2 {
   margin-bottom: 2.7rem;
   color: var(--whitebg);
+}
+
+@media (min-width: 998px) {
+  .subs__heading2 {
+    margin-bottom: 2.3rem;
+  }
 }
 
 .subs__div {
@@ -120,7 +156,7 @@ h3 {
 
 .subs__paragraph {
   margin-bottom: 3.4rem;
-  font-size: 1.74rem;
+  font-size: 1.56rem;
   color: var(--whitebg);
 }
 
@@ -132,7 +168,9 @@ h3 {
   color: var(--whitebg);
   font-weight: bold;
   text-align: center;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 .8rem 1.6rem rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 .8rem 1.6rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 .8rem 1.6rem rgba(0, 0, 0, 0.15);
   transition: background-color 200ms ease;
 }
 
